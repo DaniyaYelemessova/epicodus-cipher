@@ -10,8 +10,19 @@ const result = firstAndLastLetter(sentence);
 
 function callout(){
   const fullSentence = sentence.concat(result);
-  console.log(fullSentence)
+  // console.log(fullSentence)
 }
 
 callout()
+
+function sentenceLength(){
+  const newSentence = (sentence.length / 2).toFixed(0);
+  const anotherSentence = sentence[newSentence];
+  const addLetter = anotherSentence + sentence + result;
+  const final = addLetter.split("").reverse().join("");
+  alert(final)
+  // console.log(final)
+}
+
+sentenceLength()
 
